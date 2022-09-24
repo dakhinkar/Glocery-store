@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
-const HttpError = require('./model/http-error');
+const HttpError = require('./models/http-error');
 const productRoutes = require('./routes/product-routes');
 const customerRouts = require('./routes/customers-routes');
 

@@ -1,9 +1,9 @@
 const { validationResult} = require('express-validator');
 const { v4 } = require('uuid');
 
-const  OrderList = require('../model/orderProduct');
-const HttpError = require('../model/http-error')
-const User = require('../model/user');
+const  OrderList = require('../models/orderProduct');
+const HttpError = require('../models/http-error')
+const User = require('../models/user');
 
 const getOrderList = async(req, res, next) => {
     const { customerId } = req.params;
